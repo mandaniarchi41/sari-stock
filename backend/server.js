@@ -31,9 +31,6 @@ connection.on('error', (err) => {
 const sarisRouter = require('./routes/saris');
 
 // Use routes
-app.use("/", (req, res) => {
-  res.status(200).json({message:"Welcome to sari stock api"});
-});
 app.use('/api/saris', sarisRouter);
 
 // Start the server
